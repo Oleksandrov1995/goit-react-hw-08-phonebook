@@ -14,7 +14,7 @@ export const ContactForm = () => {
     const contact = {
       id: nanoid(),
       name: event.currentTarget.name.value,
-      number: event.currentTarget.name.value,
+      number: event.currentTarget.number.value,
     };
     const isExist = contacts.find(
       ({ name }) => name.toLowerCase() === contact.name.toLowerCase()
